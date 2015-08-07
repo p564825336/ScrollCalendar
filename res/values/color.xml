@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="selection">#6db201</color>
+    <color name="Text">#603b07</color>
+    <color name="noMonth">#c0c0c0</color>
+    <color name="white">#ffffffff</color>
+    <color name="tv_bg">#E1E1E1</color>
+    <color name="sign_all_bg">#79df68</color>
+    
+    <color name="calendar_zhe_day">#68dfc9</color>
+    <color name="calendar_background">#55227c</color>
+    <color name="blue_base">#55acee</color>
+    <color name="purple_8859b5">#8859b5</color>
+   
+</resources>

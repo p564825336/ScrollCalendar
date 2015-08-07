@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.exa.scrollcalendar.view.MyScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/ll_calendar_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/message_layout_sign"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/rl_no_confirm_schedule"
+                        android:background="@color/purple_8859b5" >
+
+                        <ImageView
+                            android:id="@+id/iv_pre_year_above"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:padding="5dp"
+                            android:src="@drawable/pre_year"
+                            android:visibility="visible" >
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/left_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="100dp"
+                            android:padding="5dp"
+                            android:src="@drawable/pre_month"
+                            android:clickable="true"
+                            android:visibility="visible" >
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/day_message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:text="2012-11"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp" >
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/right_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="100dp"
+                            android:src="@drawable/next_month"
+                            android:padding="5dp"
+                            android:visibility="visible" >
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/iv_next_year_above"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:padding="5dp"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/next_year"
+                            android:visibility="visible" >
+                        </ImageView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/calendar_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/buy"
+                    layout="@layout/buy_layout" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/one"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/one"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/one"
+                    android:scaleType="centerCrop" />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/top_buy_layout"
+                layout="@layout/buy_layout" />
+        </FrameLayout>
+    </com.exa.scrollcalendar.view.MyScrollView>
+
+</LinearLayout>
